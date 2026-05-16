@@ -1,0 +1,957 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #0992f4;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #046ac4;
+    display: flex;
+    border-bottom: 2px solid #fff;
+}
+
+ ul {
+    display: flex;
+    text-align: center;
+    margin-left: 60%;
+}
+
+ul li {
+    list-style: none;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    margin: 0px 20px 0 0;
+    padding: 10px;
+}
+
+ul li a {
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+ul li a:hover {
+    color: #95caf8;
+}
+
+ul li a:active {
+    color: #032f71;
+}
+
+ .current a {
+    border-bottom: 2px solid #f9f9f9;
+    border-radius: 5px;
+    color:#78bff1;
+    padding: 2px;
+}
+
+header .logo-info {
+    display: flex;
+    color: #fff;
+    padding: 10px;
+
+}
+
+.logo-info h3 {
+   margin-left: 20px;
+  font-size: 20px;
+}
+
+
+.hamburger-menu-icon {
+    display: none;
+}
+
+.close-burger-menu {
+    display: none;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background-color: #0e2636;
+}
+
+section {
+    width: 100vw;
+    background-color: #025aa7;
+    background-image: 
+    linear-gradient(rgba(1, 23, 38, 0.5), rgba(1, 23, 38, 0.8)), 
+    url('../Images/240_F_289923630_AkSGImdrfy3AG5KqlXZ4C5Xns8xDtTot.jpg');
+    background-size: cover;
+    height: 100%;
+}
+
+ section h1 {
+    font-size: 4.5rem;
+    color: #fff;
+    margin-top: 10px;
+    padding: 15px;
+}
+
+section  {
+    font-size: 25px;
+    color: #fff;
+    padding-top: 10px;
+} 
+
+/* Welcome Image */
+.welcome-image img {
+    width: 950px;
+    height: 570px;
+    margin-top: 20px;
+    border: 3px solid #fff;
+    border-radius: 10px;
+}
+
+.studentImage {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgba(7, 127, 246, 0.6);
+    margin-top: 35px;
+    padding: 8px;
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+}
+
+.studentImage span {
+    overflow: hidden;  /* Contains the scaled image */
+    border-radius: 10px;  /* Matches image border-radius */
+    display: inline-block;
+}
+
+.studentImage span img {
+    width: 150px;
+    height: 200px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    cursor: pointer;
+    /* display: block; */
+}
+
+.studentImage span img:hover {
+    scale: 1.1;
+    border: 2px solid #fff;
+    border-radius: 10px;
+}
+
+.info {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.info p {
+    width: 280px;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 25px;
+    padding: 3px;
+    text-align: left;
+}
+
+.info .teachers {
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    
+}
+
+.info .satisfaction {
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid hsl(0, 0%, 100%);
+}
+
+.info .classroom {
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+}
+
+.info-btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 7px;
+    padding: 10px;
+}
+
+.info-btns button {
+    width: 135px; 
+    height: 75px; 
+    padding: 15px;
+    font-size: 20px;
+    color: #fff;
+    background-color: rgb(9, 146, 244, 0.7);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.info-btns button:hover {
+    background-color: #045793;
+}
+
+.info-btns button .more-m {
+    margin-left: 15px;
+}
+
+/* Course Info */
+.course-link {
+    background-color: rgb(9, 146, 244, 0.5);
+    padding: 25px;
+    border-top: 2px solid #fff;
+}
+
+.course-link h2 {
+    margin: 15px;
+}
+
+.course-link p {
+    width: 68%;
+    text-align: left;
+    margin: auto;
+}
+
+.course-link .link {
+    text-align: center;
+    font-size: 20px;
+    color: #19046f;
+    margin-top: 10px;
+}
+
+.course-link button {
+    width: 135px; 
+    height: 75px;
+    margin-top: 5px; 
+    padding: 15px;
+    font-size: 20px;
+    color: #fff;
+    background-color: rgb(9, 146, 244, 0.5);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.course-link button:hover {
+    background-color: #045793;
+}
+
+.course-link button .more-m {
+    margin-left: 15px;
+}
+
+.solution {
+    background-color: rgba(7, 127, 246, 0.6);
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+}
+
+.solution h2 {
+    margin: 9px;
+}
+
+.solution  ul {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    text-align: left;
+    margin-left: 25%;
+    margin-bottom: 15px;
+}
+
+.solution ul li {
+    list-style: circle;
+    padding: 2px;
+    margin: 0;
+}
+
+.certified-course {
+    background-color: rgb(66, 165, 252, 0.6);
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+}
+
+.certified-course h3 {
+    font-size: 20px;
+    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+.courses {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+
+.courses img {
+    width: 70px;
+    color: #fff;
+}
+
+.courses .course-name {
+    font-size: 20px;
+    color: #fff;
+    list-style: none;
+}
+
+ .courses-info a {
+    text-decoration: none;
+}
+
+.courses-info p:hover {
+    color: #95caf8;
+}
+
+/* Social Info */
+.contact-info {
+    background-color: #046ac4;
+    border: 2px solid #fff;
+}
+
+.contact-info h3 {
+    background-color: #046ac4;
+    font-size: 22px;
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+    border-bottom: 2px solid #fff;
+}
+
+.social-info {
+    background-color: rgb(255, 255, 255, 0.5);
+    padding: 15px;
+}
+
+.social-info button {
+    background-color: #32a4f6;
+    color: #fff;
+    margin: 2px;
+    padding: 5px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.social-info i {
+    display: flex;
+    flex-direction: column;
+    color: #032f71;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.social-info button:hover {
+    background-color: #2478f7;
+}
+
+footer {
+    background-color: #046ac4;
+    color: #fff;
+    font-size: 20px;
+    padding: 25px;
+    text-align: center;
+}
+
+/* Media Screen Sizes */
+/* Media Screen Size 800 */
+@media (max-width: 810px) {
+
+ul {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin-left: 30%;
+}
+
+header ul li {
+        margin: 10px 15px 10px 30px;
+        padding: 2px 0 0 0;
+    }
+
+    header ul li a {
+       font-size: 16px;
+    }
+
+    .current a {
+        border-bottom: 2px solid #fff;
+        border-radius: 5px;
+    }
+
+.welcome-info h1 {
+    font-size: 2.8rem;
+}
+
+    /* Welcome Image */
+ .welcome-image img {
+    width: 450px;
+    height: 400px;
+}
+
+/* Solution */
+.solution h2 {
+    font-size: 2.1rem;
+    text-align: center;
+    margin: auto;
+    /* margin-left: 90px; */
+}
+
+.solution  ul {
+    display: flex;
+    flex-direction: column;
+    font-size: 22px;
+    color: #fff;
+    text-align: left;
+    margin-left: 15%;
+    margin-bottom: 15px;
+}
+
+/* Certified Course */
+.courses img {
+    width: 60px;
+    color: #fff;
+}
+
+.courses .course-name {
+    font-size: 16px;
+}
+
+/* Social Info */
+.social-info {
+    background-color: rgb(255, 255, 255, 0.5);
+    padding: 15px;
+}
+
+.social-info button {
+    background-color: #32a4f6;
+    font-size: 12px;
+    color: #fff;
+    margin: 2px;
+    padding: 3px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+}
+
+
+@media (max-width: 768px) {
+    ul {
+        margin-top: 10px;
+        margin-left: 30%;
+    }
+
+
+    ul li a {
+        font-size: 18px;
+        color: rebeccapurple;
+    }
+    
+    header .logo-info {
+        display: flex;
+        color: #fff;
+        /* padding: 10px; */
+    
+    }
+    
+    .logo-info h3 {
+      font-size: 18px;
+    }
+    
+    
+    .hamburger-menu-icon {
+        display: none;
+    }
+    
+    .close-burger-menu {
+        display: none;
+    }
+    /* header ul {
+        position: absolute;
+        right: 0%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 15px;
+        z-index: 1;
+    }
+
+    header ul li {
+        margin: 25px 25px 10px 80px;
+        padding: 2px 0 0 0;
+    }
+
+    header ul li a {
+        border: none;
+    }
+
+    .current a {
+        background-color: #fff;
+        padding: 4px 50px 4px 50px;
+        border: none;
+        border-radius: 0%;
+    }
+
+    .menus {
+        display: none;
+    }
+
+    .hamburger-menu-icon {
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 94%;
+    }
+
+    .hamburger-menu-icon .open-menu {
+        position: absolute;
+        margin-top: 8px;
+        color: #fff;
+        font-size: 25px;
+        cursor: pointer;
+    }
+
+    .hamburger-menu-icon .open-menu:hover {
+        color: #dff632;
+    }
+
+     .close-burger-menu {
+        width: 40%;
+        height: 22%;
+        display: none;
+        position: absolute;
+        left: 60%;
+        top: 0;
+        background-color: #032f71;
+        transition: .6s ease;
+        font-size: 25px;
+        color: #fff;
+        cursor: pointer;
+    }
+
+     .close-burger-menu .close-menu {
+        position: absolute;
+        left: 79%;
+        margin-left: 13px;
+     }
+
+     .close-burger-menu .close-menu:hover {
+        color: #95caf8;
+    }
+
+    .open-smooth {
+        transition: .6s ease-out;
+    }
+
+    .close-smooth {
+        transition: .8s ease-out;
+    }
+
+ header .logo-info {
+        padding: 12px;
+    } */
+
+    /* Container Welcome Info */
+section h1 {
+    font-size: 2.7rem;
+}
+
+section  {
+    font-size: 20px;
+    color: #fff;
+    padding: 10px;
+} 
+
+/* Welcome Image */
+.welcome-image img {
+    width: 450px;
+    height: 400px;
+}
+
+.studentImage span img {
+    width: 120px;
+    height: 150px;
+}
+
+.info p {
+    width: 190px;
+    font-size: 14px;
+    margin-right: 20px;
+}
+
+.info-btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 7px;
+    padding: 10px;
+}
+
+.info-btns button {
+    font-size: 16px;
+}
+
+.info-btns button .more-m {
+    margin-left: 15px;
+}
+
+/* Course Info */
+.solution  ul {
+    margin-right: 55px;
+}
+
+/* Certified Course */
+.courses img {
+    width: 60px;
+}
+
+.courses .course-name {
+    font-size: 16px;
+    padding: 10px;
+}
+
+/* Social Info */
+.contact-info h3 {
+    font-size: 20px;
+}
+
+.social-info button {
+    padding: 4px;
+}
+
+.social-info i {
+    font-size: 20px;
+}
+
+footer {
+    font-size: 16px;
+    padding: 10px;
+}
+
+}
+/* Media Screen Size 500px */
+@media (max-width: 500px) {
+    header ul {
+        position: absolute;
+        right: 0%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 15px;
+        z-index: 1;
+    }
+
+    header ul li {
+        margin: 25px 15px 10px 50px;
+        padding: 2px 0 0 0;
+    }
+
+    header ul li a {
+        border: none;
+        color: #fff;
+    }
+
+    .current a {
+        background-color: #fff;
+        padding: 4px 50px 4px 50px;
+        border: none;
+        border-radius: 0%;
+    }
+
+    .menus {
+        display: none;
+    }
+
+    .hamburger-menu-icon {
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 90%;
+    }
+
+    .hamburger-menu-icon .open-menu {
+        position: absolute;
+        margin-top: 8px;
+        color: #fff;
+        font-size: 25px;
+        cursor: pointer;
+    }
+
+    .hamburger-menu-icon .open-menu:hover {
+        color: #dff632;
+    }
+
+     .close-burger-menu {
+        width: 40%;
+        height: 20%;
+        display: none;
+        position: absolute;
+        left: 60%;
+        top: 0;
+        background-color: #032f71;
+        transition: .6s ease;
+        font-size: 25px;
+        color: #fff;
+        cursor: pointer;
+    }
+
+     .close-burger-menu .close-menu {
+        position: absolute;
+        left: 79%;
+        margin-left: 5px;
+     }
+
+     .close-burger-menu .close-menu:hover {
+        color: #95caf8;
+    }
+
+    .open-smooth {
+        transition: .6s ease-out;
+    }
+
+    .close-smooth {
+        transition: .8s ease-out;
+    }
+
+ header .logo-info {
+        padding: 12px;
+    } 
+      /* header ul {
+        margin-top: 20px;
+        z-index: 1;
+    }
+
+    header ul li {
+        padding: 2px 0 0 0;
+    }
+
+    header ul li a {
+        font-size: 16px;
+    }
+
+    .current a {
+        padding: 4px 30px 4px 30px;
+    }
+
+    .hamburger-menu-icon {
+        left: 90%;
+    }
+
+    .hamburger-menu-icon .open-menu:hover {
+        color: #dff632;
+    }
+
+     .close-burger-menu {
+        left: 60%;
+    }
+
+     .close-burger-menu .close-menu {
+        position: absolute;
+        left: 79%;
+        margin-left: 13px;
+     } */
+
+    /* Container Welcome Info */
+section h1 {
+    font-size: 2.3rem;
+}
+
+section  {
+    font-size: 18px;
+} 
+
+/* Welcome Image */
+.welcome-image img {
+    width: 380px;
+    height: 350px;
+}
+
+.studentImage span img {
+    width: 100px;
+    height: 120px;
+}
+
+.info p {
+    /* width: 90px; */
+    font-size: 14px;
+    margin-right: 22px;
+}
+
+.info-btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 7px;
+    padding: 10px;
+}
+
+.info-btns button {
+    width: 100px; 
+    height: 75px; 
+    padding: 14px;
+    font-size: 17px;
+}
+
+.info-btns button .more-m {
+    margin-left: 13px;
+}
+
+/* Course Link */
+.course-link h2 {
+    margin: 15px;
+}
+
+.course-link p {
+    width: 68%;
+    text-align: left;
+    margin: auto;
+}
+
+.course-link .link {
+    text-align: center;
+    font-size: 18px;
+    color: #19046f;
+    margin-top: 10px;
+}
+
+.course-link button {
+    width: 100px; 
+    height: 75px;
+    margin-top: 5px; 
+    padding: 15px;
+    font-size: 17px;
+    color: #fff;
+    background-color: rgb(9, 146, 244, 0.5);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+/* Course Info */
+.solution  ul {
+    margin-right: 55px;
+}
+
+.course-link button .more-m {
+    margin-left: 13px;
+}
+
+/* Certified Course */
+.courses img {
+    width: 40px;
+}
+
+.courses .course-name {
+    font-size: 13px;
+    padding: 10px;
+}
+
+/* Social Info */
+.contact-info h3 {
+    font-size: 20px;
+}
+
+.social-info {
+    background-color: rgb(255, 255, 255, 0.5);
+    padding: 13px;
+    font-size: 9px;
+}
+
+.social-info button {
+    padding: 4px;
+}
+
+.social-info i {
+    font-size: 18px;
+}
+
+.social-info button:hover {
+    background-color: #2478f7;
+}
+}
+
+/* Media Screen Size 400px */
+@media (max-width: 400px) {
+    header ul li {
+        margin: 15px 20px 10px 30px;
+    }
+    
+    header ul li a {
+        font-size: 14px;
+    }
+
+    .current a {
+        padding: 4px 30px 4px 30px;
+    }
+
+     .close-burger-menu {
+        width: 38%;
+        height: 18%;
+        left: 62%;
+    }
+
+    /* Container Welcome Info */
+/* Welcome Image */
+.welcome-image img {
+    width: 340px;
+    height: 320px;
+}
+
+.info p {
+    font-size: 14px;
+    margin-right: 0%;
+}
+
+.info-btns button {
+    padding: 14px;
+}
+
+.info-btns button .more-m {
+    margin-left: 13px;
+}
+
+/* Certified Course */
+.courses img {
+    width: 40px;
+}
+
+.courses .course-name {
+    font-size: 13px;
+    padding: 10px;
+}
+
+/* Social Info */
+.contact-info h3 {
+    font-size: 20px;
+}
+
+.social-info {
+    background-color: rgb(255, 255, 255, 0.5);
+    padding: 13px;
+    font-size: 9px;
+}
+
+.social-info button {
+    padding: 4px;
+}
+
+.social-info i {
+    font-size: 18px;
+}
+
+.social-info button:hover {
+    background-color: #2478f7;
+}
+}
