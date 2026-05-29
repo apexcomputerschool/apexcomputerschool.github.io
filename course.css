@@ -1,0 +1,901 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #0992f4;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #046ac4;
+    display: flex;
+    border-bottom: 2px solid #fff;
+}
+
+  ul {
+    display: flex;
+    margin-left: 650px;
+    margin-top: 20px;
+}
+
+ul li {
+    list-style: none;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    margin: 0px 20px 0 0;
+    padding: 10px;
+}
+
+ul li a {
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+ul li a:hover {
+    color: #95caf8;
+}
+
+ul li a:active {
+    color: #032f71;
+}
+
+ .current a {
+    border-bottom: 2px solid #f9f9f9;
+    border-radius: 5px;
+    color:#78bff1;
+    padding: 2px;
+}
+
+header .logo-info {
+    display: flex;
+    color: #fff;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.logo-img img {
+   width: 50px;
+   height: 70px;
+   margin-top: 0px;
+  
+}
+
+.logo-info p {
+   margin-top: 20px;
+   margin-left: 10px;
+   font-size: 20px;
+}
+
+.hamburger-menu-icon {
+    display: none;
+}
+
+.close-burger-menu {
+    display: none;
+}
+
+/* Course Page */
+.course-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #0442a5;
+    width: 80%;
+    margin-left: 150px;
+}
+
+
+.course-container h1 {
+    font-size: 50px;
+    color: #fff;
+    padding: 15px;
+}
+
+.course-container p {
+    font-size: 19px;
+    color: #fff;
+    padding: 3px;
+    text-align: center;
+}
+
+/* Contact us on Whatsapp */
+.whatsapp-social a, .whatsapp-social button {
+    background: transparent;
+    border: none;
+}
+
+.whatsapp-social {
+    position: fixed;
+    left: 85%;
+}
+.whatsapp-social img {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.whatsapp-social p {
+    color: #fff;
+    font-size: 13px;
+}
+
+.course-container .course-time {
+    background-color: #0992f4;
+    border: 2px solid #fff;
+}
+
+
+ .course-list {
+    margin-top: 25px;
+    margin-bottom: 45px;
+    background-color: #0992f4;
+    padding: 45px;
+    border: 2px solid #fff;
+}
+
+.course-list h2 {
+    font-size: 35px;
+    color: #fff;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.course-time {
+    margin-top: 25px;
+    margin-bottom: 45px;
+    background-color: #0992f4;
+    padding: 45px;
+    border: 2px solid #fff;
+}
+
+.course-time h3 {
+    width: 70%;
+    font-size: 30px;
+    color: #fff;
+    margin-bottom: 15px;
+    margin-left: 95px;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+}
+
+
+table th {
+    font-size: 28px;
+    padding: 10px;
+    color: #fff;
+    letter-spacing: 2px;
+    background-color: #035699;
+    text-align: center;
+    border: 1px solid #fff;
+}
+
+table td {
+    padding: 6px;
+    color: #e6e9fa;
+    font-size: 20px;
+    text-align: center;
+    border: 1px solid #fff;
+}
+
+table  tr:nth-child(even) {
+    background-color: #0270be;
+}
+
+table  tr:nth-child(odd) {
+    background-color: #035a98;
+   
+}
+
+.selected {
+    background-color: #0b5f01;
+}
+
+
+/* Social Info */
+.contact-info {
+    background-color: #046ac4;
+    border: 2px solid #fff;
+}
+
+.contact-info h3 {
+    background-color: #046ac4;
+    font-size: 22px;
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+    border-bottom: 2px solid #fff;
+}
+
+.social-info {
+    background-color: rgb(255, 255, 255, 0.5);
+    padding: 15px;
+    text-align: center;
+}
+
+.social-info button {
+    background-color: #32a4f6;
+    color: #fff;
+    margin: 2px;
+    padding: 5px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.social-info i {
+    display: flex;
+    flex-direction: column;
+    color: #032f71;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.social-info button:hover {
+    background-color: #2478f7;
+}
+
+footer {
+    background-color: #046ac4;
+    color: #fff;
+    font-size: 20px;
+    padding: 25px;
+    text-align: center;
+}
+
+/* Media Queries Screen Size 810px */
+@media (max-width: 1024px) {
+    header ul {
+        margin-top: 20px;
+        margin-left: 190px;
+    }
+
+    header ul li a {
+        font-size: 18px;
+        color: #fff;
+    }
+
+    header .logo-info {
+        display: flex;
+        color: #fff;
+        margin-left: 20px;
+    }
+
+    .logo-info h3 {
+        font-size: 18px;
+    }
+
+    /* WhatsApp contact info */
+.whatsapp-social {
+    position: fixed;
+    left: 80%;
+}
+.whatsapp-social img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.whatsapp-social p {
+    font-size: 14px;
+}
+     
+    /* Course Page */
+    .course-container {
+        width: 100%;
+        margin: auto;
+    }
+    
+    .course-container h1 {
+        font-size: 38px;
+        text-align: center;
+    }
+    
+    .course-container p {
+        font-size: 17px;
+        color: #fff;
+        margin-left: 20px;
+        padding: 3px;
+        text-align: left;
+    }
+      
+     .course-list {
+        margin-top: 25px;
+        margin-bottom: 45px;
+        padding: 45px;
+    }
+    
+    .course-list h2 {
+        font-size: 35px;
+        color: #fff;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    
+    .course-time {
+        margin-top: 25px;
+        margin-bottom: 45px;
+        padding: 45px;
+    }
+    
+    .course-time h3 {
+        width: 100%;
+        font-size: 30px;
+        margin-bottom: 15px;
+        margin-left: 10px;
+    }
+    
+    table {
+        width: 100%;
+    }
+    
+    table th {
+        font-size: 28px;
+        padding: 10px;
+    }
+    
+    table td {
+        padding: 6px;
+        font-size: 20px;
+    }
+
+}
+
+/* Media Queries Screen Size 810px */
+@media (max-width: 810px) {
+    ul {
+        display: flex;
+        margin: 10px 10px 0 35%;
+    }
+
+    ul li a {
+        font-size: 18px;
+    }
+    
+    header .logo-info {
+        display: flex;
+    }
+    
+    .logo-info h3 {
+      font-size: 18px;
+    }
+
+/* WhatsApp contact info */
+.whatsapp-social {
+    position: fixed;
+    left: 72%;
+}
+.whatsapp-social img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.whatsapp-social p {
+    font-size: 14px;
+}
+     
+    /* Course Page */
+    .course-container {
+        width: 100%;
+        margin: auto;
+    }
+    
+    .course-container h1 {
+        font-size: 38px;
+        text-align: center;
+    }
+    
+    .course-container p {
+        font-size: 17px;
+        color: #fff;
+        margin-left: 20px;
+        padding: 3px;
+        text-align: left;
+    }
+      
+     .course-list {
+        margin-top: 25px;
+        margin-bottom: 45px;
+        padding: 45px;
+    }
+    
+    .course-list h2 {
+        font-size: 35px;
+        color: #fff;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    
+    .course-time {
+        margin-top: 25px;
+        margin-bottom: 45px;
+        padding: 45px;
+    }
+    
+    .course-time h3 {
+        width: 70%;
+        font-size: 30px;
+        margin-bottom: 15px;
+        margin-left: 95px;
+    }
+    
+    table {
+        width: 100%;
+    }
+    
+    table th {
+        font-size: 28px;
+        padding: 10px;
+    }
+    
+    table td {
+        padding: 6px;
+        font-size: 20px;
+    }
+
+    footer {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+}
+
+/* Media Queries Screen Size 768px */
+@media (max-width:768px) {
+   header ul {
+        margin-top: 20px;
+        margin-left: 120px;
+    }
+
+    header ul li a {
+        font-size: 18px;
+        color: #fff;
+    }
+
+    header .logo-info {
+        display: flex;
+        margin-left: 20px;
+    }
+
+    .logo-info p {
+        margin-top: 20px;
+        font-size: 18px;
+    }
+
+/* WhatsApp contact info */
+.whatsapp-social {
+    position: fixed;
+    left: 72%;
+}
+.whatsapp-social img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+     
+    /* Course Page */
+    .course-container {
+        width: 100%;
+        margin: auto;
+    }
+    
+    .course-container h1 {
+        font-size: 38px;
+        text-align: center;
+    }
+    
+    .course-container p {
+        font-size: 17px;
+        color: #fff;
+        margin-left: 20px;
+        padding: 3px;
+        text-align: left;
+    }
+      
+     .course-list {
+        margin-top: 25px;
+        margin-bottom: 45px;
+        padding: 45px;
+    }
+    
+    .course-list h2 {
+        font-size: 35px;
+        color: #fff;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    
+    .course-time {
+        margin-top: 25px;
+        margin-bottom: 45px;
+        padding: 45px;
+    }
+    
+    .course-time h3 {
+        width: 70%;
+        font-size: 30px;
+        margin-bottom: 15px;
+        margin-left: 95px;
+    }
+    
+    table {
+        width: 100%;
+    }
+    
+    table th {
+        font-size: 28px;
+        padding: 10px;
+    }
+    
+    table td {
+        padding: 6px;
+        font-size: 20px;
+    }
+    
+    
+    /* Registration Form */
+    .register-online {
+        background-color: #007ae4;
+        margin-bottom: 10px;
+        padding: 15px;
+        text-align: center;
+        border-radius: 10px;
+    }
+    
+    .register-online h3 {
+        font-size: 23px;
+        background-color: #fff;
+        color: #077ff6;
+        padding: 5px;
+    }
+    
+    .register-online p {
+        padding: 10px;
+    }
+    
+    .register-online a {
+        color: #2123b8;
+    }
+    
+    .register-online .form  {
+        margin-bottom: 10px;
+        padding: 25px;
+    }
+    
+    
+    /* Social Info */
+    .contact-info {
+        background-color: #046ac4;
+        border: 2px solid #fff;
+    }
+    
+    .contact-info h3 {
+        background-color: #046ac4;
+        font-size: 22px;
+        color: #fff;
+        padding: 5px;
+        text-align: center;
+        border-bottom: 2px solid #fff;
+    }
+    
+    .social-info {
+        background-color: rgb(255, 255, 255, 0.5);
+        padding: 15px;
+        text-align: center;
+    }
+    
+    .social-info button {
+        background-color: #32a4f6;
+        color: #fff;
+        margin: 2px;
+        padding: 5px;
+        border: 2px solid #fff;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    
+    .social-info i {
+        display: flex;
+        flex-direction: column;
+        color: #032f71;
+        font-size: 25px;
+    }
+    
+    .social-info button:hover {
+        background-color: #2478f7;
+    }
+    
+    footer {
+        font-size: 16px;
+        padding: 10px;
+    }
+}
+
+/* Media Queries Screen Size 500px */
+@media (max-width: 500px) {
+    header ul {
+        position: absolute;
+        right: 2%;
+        margin-top: 10px;
+        z-index: 1;
+    }
+
+    header ul li {
+        margin: 15px 15px 10px 50px;
+        padding: 2px 0 0 0;
+    }
+
+    header ul li a {
+        border: none;
+        color: #fff;
+    }
+
+    .current {
+        background-color: #fff;
+        padding: 5px;
+    }
+
+    .logo-info {
+         margin-left: 0;
+    }
+
+.logo-info img {
+    width: 90px;
+    height: 120px;
+    padding: 0;
+   
+}
+
+.logo-info p {
+    font-size: 25px;
+    margin-top: 25px;
+}
+
+.whatsapp-social p {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+    .menus {
+        display: none;
+    }
+
+    .hamburger-menu-icon {
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 90%;
+    }
+
+    .hamburger-menu-icon .open-menu {
+        position: absolute;
+        margin-top: 8px;
+        color: #fff;
+        font-size: 25px;
+        cursor: pointer;
+    }
+
+    .hamburger-menu-icon .open-menu:hover {
+        color: #dff632;
+    }
+
+     .close-burger-menu {
+        width: 40%;
+        height: 18%;
+        display: none;
+        position: absolute;
+        left: 60%;
+        top: 0;
+        background-color: #032f71;
+        transition: .6s ease;
+        font-size: 25px;
+        color: #fff;
+        cursor: pointer;
+    }
+
+     .close-burger-menu .close-menu {
+        position: absolute;
+        left: 79%;
+        margin-left: 5px;
+     }
+
+     .close-burger-menu .close-menu:hover {
+        color: #95caf8;
+    }
+
+    .open-smooth {
+        transition: .6s ease-out;
+    }
+
+    .close-smooth {
+        transition: .8s ease-out;
+    }
+
+ header .logo-info {
+        padding: 12px;
+    } 
+    /* Course Page */    
+    .course-container h1 {
+        font-size: 38px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+      
+    .course-list h2 {
+        font-size: 30px;
+        padding: 0px 20px 0 20px;
+    }
+
+    .course-time {
+        display: none;
+    }
+    
+    table {
+        width: 80%;
+    }
+    
+    table th {
+        font-size: 20px;
+        padding: 10px;
+        color: #fff;
+        letter-spacing: 2px;
+        background-color: #035699;
+        text-align: center;
+        border: 1px solid #fff;
+    }
+    
+    table td {
+        padding: 6px;
+        color: #e6e9fa;
+        font-size: 20px;
+        text-align: center;
+        border: 1px solid #fff;
+    }
+    
+    table  tr:nth-child(even) {
+        background-color: #0270be;
+    }
+    
+    table  tr:nth-child(odd) {
+        background-color: #035a98;
+       
+    }
+    
+    /* Registration Form */
+    .register-online {
+        background-color: #007ae4;
+        margin-bottom: 10px;
+        padding: 15px;
+        text-align: center;
+        border-radius: 10px;
+    }
+    
+    .register-online h3 {
+        font-size: 23px;
+        background-color: #fff;
+        color: #077ff6;
+        padding: 5px;
+    }
+    
+    .register-online p {
+        padding: 10px;
+    }
+    
+    .register-online a {
+        color: #2123b8;
+    }
+    
+    .register-online .form  {
+        margin-bottom: 10px;
+        padding: 25px;
+    }
+    
+   /* Social Info */
+.contact-info h3 {
+    font-size: 20px;
+}
+
+.social-info button {
+    padding: 4px;
+}
+
+.social-info i {
+    font-size: 20px;
+}
+
+}
+
+/* Media Queries Screen Size 400px */
+@media (max-width: 400px) {
+header ul {
+        margin-bottom: 80%;
+    }
+   
+    header ul li {
+        margin-left: 40%;
+       
+    }
+
+    header ul li a {
+        font-size: 17px;
+        color: #fff;
+        
+    }
+
+    .current a {
+        padding: 0px 50px 0 10px;
+        margin-right: 30px;
+        text-align: center;
+        border-bottom: none;
+    }
+
+    .close-burger-menu {
+        width: 38%;
+        height: 18%;
+        left: 62%;
+    }
+
+    .close-burger-menu:hover {
+        color: red;
+    }
+
+    .logo-img img {
+        width: 80px;
+        height: 110px;
+    }
+
+    .logo-info p {
+        font-size: 22px;
+        margin-top: 35px;
+        margin-left: 5px;
+    }
+
+/* Course Page */    
+.course-time {
+    display: none;
+}
+
+table {
+    width: 40%;
+}
+
+table th {
+    font-size: 19px;
+    padding: 5px;
+}
+
+table td {
+    padding: 6px;
+    font-size: 17px;
+}
+
+/* Registration Form */
+.register-online h3 {
+    font-size: 18px;
+    padding: 4px;
+}
+
+.register-online p {
+    padding: 5px;
+}
+
+.register-online .form  {
+    padding: 20px;
+}
+
+}
