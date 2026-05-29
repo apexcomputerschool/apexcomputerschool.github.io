@@ -40,27 +40,6 @@ let imageGallery = [
    imgThree = {
         img: [`<img src="Images/Apex Computer School Flyer Two.png" alt="Computer Training" width="80px" height="100px">`]
     }
-//    imgFour = {
-//         img: [`<img src="../Images/APEX.jpg" alt="Computer Training" width="80px" height="100px">`]
-//     },
-//    imgFive = {
-//         img: [`<img src="../Images/WhatsApp Image 2025-10-18 at 22.18.24_f8630006.jpg" alt="Computer Training" width="80px" height="100px">`]
-//     },
-//    imgSix = {
-//         img: [`<img src="../Images/WhatsApp Image 2025-10-27 at 12.49.38_a369fc32.jpg" alt="Computer Training" width="80px" height="100px">`]
-//     },
-//   imgSeven = {
-//         img: [`<img src="../Images/WhatsApp Image 2025-10-27 at 12.49.39_50820400.jpg" alt="Computer Training" width="80px" height="100px">`]
-//     },
-//    imgEight = {
-//         img: [`<img src="../Images/WhatsApp Image 2025-10-27 at 12.49.40_c38c8c76.jpg" alt="Computer Training" width="80px" height="100px">`]
-//     },
-//    imgNine = {
-//         img: [`<img src="../Images/WhatsApp Image 2025-10-27 at 18.56.24_876bb91a.jpg" alt="Computer Training" width="80px" height="100px">`]
-//     },
-//    imgTen = {
-//         img: [`<img src="../Images/WhatsApp Image 2025-10-27 at 18.56.27_0bd0a8a2.jpg" alt="Computer Training" width="80px" height="100px">`]
-//     },
 ]
 
 let index = 0;
@@ -87,7 +66,6 @@ let bigImageDisplay = document.getElementById('displayBig');
 if(bigImageDisplay) {
 function showImage() {
     let imgIndex = imageGallery[index].img;
-    // console.log('Img: ' + imgIndex.img)
     bigImageDisplay.innerHTML = imgIndex;
 }
 showImage();
@@ -129,7 +107,7 @@ let animate = () => {
     
 }
 
-// animate();
+animate();
 
 // Microsoft Office Package Info
 let officePackageInfo = document.getElementById('microsoft-office-package');
@@ -155,28 +133,9 @@ closeBtn.addEventListener('click', () => {
 }
 
 
-// // ================= MICROSOFT OFFICE PACKAGE =================
-// let officePackageInfo = document.getElementById('microsoft-office-package');
-// let officePackage = document.getElementById('microsoft-office-selected');
-// let officeCloseBtn = officePackageInfo.querySelector('.close-btn');
-
-// // Open Microsoft Office Package
-// officePackage.addEventListener('click', () => {
-//     homeContainer.style.display = 'none';
-//     officePackageInfo.style.display = 'block';
-// });
-
-// // Close Microsoft Office Package
-// officeCloseBtn.addEventListener('click', () => {
-//     officePackageInfo.style.display = 'none';
-//     homeContainer.style.display = 'block';
-// });
-
-
 // ================= COMPUTER FUNDAMENTAL =================
 let computerFundamentalInfo = document.getElementById('computer-fundamental');
 let computerFundamentalBtn = document.getElementById('computer-fundamental-selected');
-
 
 // Open Computer Fundamental
 if(computerFundamentalBtn && computerFundamentalInfo) {
@@ -197,8 +156,6 @@ computerCloseBtn.addEventListener('click', () => {
 });
 }
 
-
-
 // ================= GRAPHIC DESIGN =================
 let graphicDesignInfo = document.getElementById('graphic-design-course');
 let graphicDesignBtn = document.getElementById('graphic-design-selected');
@@ -211,7 +168,6 @@ graphicDesignBtn.addEventListener('click', () => {
 });
 }
 
-
 // Close Graphic Design
 let graphicCloseBtn = document.getElementById('graphic-design-close-btn');
 
@@ -222,12 +178,9 @@ graphicCloseBtn.addEventListener('click', () => {
 });
 }
 
-
-
 // ================= WEB DESIGN =================
 let webDesignInfo = document.getElementById('web-design-course');
 let webDesignBtn = document.getElementById('web-design-selected');
-
 
 // Open Web Design
 if(webDesignBtn && webDesignInfo) {
@@ -236,7 +189,6 @@ webDesignBtn.addEventListener('click', () => {
     webDesignInfo.style.display = 'block';
 });
 }
-
 
 // Close Web Design
 let webCloseBtn = document.getElementById('web-design-close-btn');
@@ -316,39 +268,6 @@ let date = new Date();
 let fullYear = date.getFullYear();
 
 footer.innerHTML = fullYear;
-
-// let displayInfos = document.getElementById('displayInfo');
-// let indexTech = 0;
-
-// let displayText = ['HTML', 'CSS', 'JAVASCRIPT'];
-
-// function techSlide() {
-//     // let slideIndex = displayText[indexTech];
-
-//         // Get current item
-//     let slideIndex = displayText[indexTech];
-
-//     // Show current item
-//     displayInfos.innerHTML = `This Tech is: ${slideIndex}`;
-
-//     console.log(slideIndex);
-
-//     // Move to next item
-//     indexTech++;
-
-//     // Restart from beginning
-//     if (indexTech >= displayText.length) {
-//         indexTech = 0;
-//     }
-// }
-
-
-
-// setInterval( () => {
-// // techSlide();
-// }, 1000)
-
-
 
 
 
